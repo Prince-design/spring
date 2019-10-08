@@ -3,4 +3,10 @@
 <bean id="Pyare Mohan" class="com.zensar.spring.performers.Juggler">
 <constructor-arg value="10"></constructor-arg>
 </bean>
+<bean id="Twinkle" class="com.zensar.spring.poems.PalPalTumseHarPalMera"></bean>
+<bean id="Kate" class="com.zensar.spring.performers.PoeticJuggler">
+<constructor-arg value="10"></constructor-arg>
+<constructor-arg ref="Twinkle"></constructor-arg>
+</bean>
+
 </beans>
