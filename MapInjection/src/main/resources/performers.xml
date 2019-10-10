@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	<bean id="Cello" class="com.zensar.spring.instruments.Cello"></bean>
+	<bean id="Guitar" class="com.zensar.spring.instruments.Guitar"></bean>
+	<bean id="Tabla" class="com.zensar.spring.instruments.Tabla"></bean>
+	<bean id="Angus Young"
+		class="com.zensar.spring.performers.Instrumentalist">
+		<property name="instrumentSongMap">
+			<map>
+				<entry key-ref="Cello" value="Tera bina me Jine Laga hoon"></entry>
+				<entry key-ref="Guitar" value="Human"></entry>
+				<entry key-ref="Tabla" value="Teen-Taal"></entry>
+			</map>
+		</property>
+		
+	</bean>
+
+</beans>
