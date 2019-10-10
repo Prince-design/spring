@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	<bean id="Cello" class="com.zensar.spring.instruments.Cello"></bean>
+	<bean id="Guitar" class="com.zensar.spring.instruments.Guitar"></bean>
+	<bean id="Angus Young"
+		class="com.zensar.spring.performers.Instrumentalist">
+		<property name="instrument" ref="Cello"></property>
+		<property name="song" value="Thunderstruck"></property>
+	</bean>
+	<bean id="kk" parent="Angus Young">
+		<property name="song" value="Jane kya Dhondhta hai ye mera dil isko kya chahiye jindagi"></property>
+	</bean>
+	<bean id="Lucky Ali" parent="kk">
+	<property name="instrument" ref="Guitar"></property>
+	</bean>
+
+</beans>
