@@ -8,11 +8,12 @@
 	<bean id="Angus Young"
 		class="com.zensar.spring.performers.Instrumentalist">
 		<property name="instruments">
-			<list>
+			<set>
 				<ref bean="Cello" />
 				<ref bean="Guitar" />
 				<ref bean="Tabla" />
-			</list>
+				<ref bean="Tabla" />
+			</set>
 		</property>
 		<property name="song" value="Thunderstruck"></property>
 	</bean>
